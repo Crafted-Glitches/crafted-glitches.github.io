@@ -3,7 +3,19 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta http-equiv="refresh" content="3; URL=https://blog.alaa.sh" />
+    <script type="text/javascript">
+        (function(){
+            let defaultPath = 'Welcome';
+            let requestedPath = window.location.pathname;
+            console.log(`Redirecting to default path 1: ${defaultPath}`);
+            
+            if (requestedPath != defaultPath) {
+                let requestedPath = defaultPath;
+                <meta http-equiv="refresh" content="1; URL=https://blog.alaa.sh" />
+            console.log(`Redirecting to requested path 1: ${requestedPath}`);
+        }
+    })();
+    </script>
     <style class="preload">
         html,body{
             margin:0;
@@ -33,18 +45,6 @@
     </style>
 
     <base href="https://publish.obsidian.md">
-    <script type="text/javascript">
-    (function(){
-        let defaultPath = 'Welcome';
-        let requestedPath = window.location.pathname;
-        console.log(`Redirecting to default path 1: ${defaultPath}`);
-        
-        if (requestedPath != defaultPath) {
-            let requestedPath = defaultPath;
-            console.log(`Redirecting to requested path 1: ${requestedPath}`);
-        }
-    })();
-    </script>
 
         <script defer="defer" src="https://publish.obsidian.md/app.js?09cbb17d8c5de2dbdf08"></script>
         <link rel="preload" href="https://publish.obsidian.md/app.css?09cbb17d8c5de2dbdf08" as="style" onload="this.onload=null;this.rel='stylesheet'">
