@@ -32,6 +32,18 @@
     </style>
 
     <base href="https://publish.obsidian.md">
+    <script type="text/javascript">
+    (function(){
+        let defaultPath = 'Welcome';
+        let requestedPath = window.location.pathname;
+        console.log(`Redirecting to default path 1: ${defaultPath}`);
+        
+        if (requestedPath != defaultPath) {
+            let requestedPath = defaultPath;
+            console.log(`Redirecting to requested path 1: ${requestedPath}`);
+        }
+    })();
+    </script>
 
     <script defer="defer" src="https://publish.obsidian.md/app.js?09cbb17d8c5de2dbdf08"></script>
     <link rel="preload" href="https://publish.obsidian.md/app.css?09cbb17d8c5de2dbdf08" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -69,6 +81,7 @@
     <meta name="description" content="Welcome - Powered by Obsidian Publish.">
     <meta property="og:description" content="Welcome - Powered by Obsidian Publish.">
 </head>
+
 <body class="theme-dark">
     <div class="preload" style="text-align:center">
         <svg style="width:50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
