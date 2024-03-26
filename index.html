@@ -50,11 +50,13 @@
     <link rel="icon" href="https://publish.obsidian.md/favicon.ico?09cbb17d8c5de2dbdf08">
 
     <script type="text/javascript">
-        window.siteInfo={"uid":"2c5a68159068a224535763457f7212bf","host":"publish-01.obsidian.md","status":"active","slug":"alaa","redirect":1,"customurl":"blog.alaa.sh"};
+        window.siteInfo={"uid":"2c5a68159068a224535763457f7212bf","host":"publish-01.obsidian.md","status":"active","slug":null,"redirect":1,"customurl":"blog.alaa.sh"};
         (function(){
-            const defaultPath = '/alaa/Welcome';
-            const requestedPath = window.location.pathname;
-            if (requestedPath !== defaultPath) {
+            let defaultPath = 'Welcome';
+            let requestedPath = window.location.pathname;
+            console.log(`Redirecting to default path: ${defaultPath}`);
+            
+            if (requestedPath != defaultPath) {
                 let requestedPath = defaultPath;
                 console.log(`Redirecting to requested path: ${requestedPath}`);
             }
