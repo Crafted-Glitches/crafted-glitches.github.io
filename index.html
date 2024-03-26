@@ -1,21 +1,22 @@
+<script type="text/javascript">
+    (function(){
+        let defaultPath = '';
+        let requestedPath = window.location.pathname;
+        console.log(`Redirecting to default path 1: ${defaultPath}`);
+        
+        if (requestedPath != defaultPath) {
+            window.location.assign = "https://blog.alaa.sh";
+            let requestedPath = defaultPath;
+            // <meta http-equiv="refresh" content="1; URL=https://blog.alaa.sh" />
+            console.log(`Redirecting to requested path 1: ${requestedPath}`);
+    }
+})();
+</script>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <script type="text/javascript">
-        (function(){
-            let defaultPath = 'Welcome';
-            let requestedPath = window.location.pathname;
-            console.log(`Redirecting to default path 1: ${defaultPath}`);
-            
-            if (requestedPath != defaultPath) {
-                let requestedPath = defaultPath;
-                <meta http-equiv="refresh" content="1; URL=https://blog.alaa.sh" />
-            console.log(`Redirecting to requested path 1: ${requestedPath}`);
-        }
-    })();
-    </script>
     <style class="preload">
         html,body{
             margin:0;
